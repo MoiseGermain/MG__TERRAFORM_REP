@@ -1,0 +1,3 @@
+# This text file is for testing git push
+
+We will all receive the blessing we desire.
