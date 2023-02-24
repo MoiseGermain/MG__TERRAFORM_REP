@@ -1,3 +1,53 @@
 # This text file is for testing git push
 
-We will all receive the blessing we desire.
+#echo We will all receive the blessing we desire.
+
+moger@Moise MINGW64 ~/downloads/devops
+$ echo "# MG__TERRAFORM_REP" >> README.md
+
+moger@Moise MINGW64 ~/downloads/devops
+$ git init
+Initialized empty Git repository in C:/Users/moger/Downloads/DevOps/.git/
+
+moger@Moise MINGW64 ~/downloads/devops (master)
+$ git add https://github.com/Moisegermain/MG__TERRAFORM_REP.git
+fatal: pathspec 'https://github.com/Moisegermain/MG__TERRAFORM_REP.git' did not match any files
+
+moger@Moise MINGW64 ~/downloads/devops (master)
+$ vi testlinuxfil.txt
+
+moger@Moise MINGW64 ~/downloads/devops (master)
+$ ls
+ Class31-devops-runningNotes.yml            Linux-Cheat-Sheet-Sponsored-By-Loggly.pdf  'Screenshot 2023-01-14 142338.png'
+'DevOps End to End Automation Steps.docx'  'Linux-Interview-Questions&Answers.pdf'     'Scripting LandmarkTechnology  v24.pdf'
+'Git and GitHub notes.pdf'                  MG_TERRAFORM/                              'Syllabus - DevOps E. Degree 30 syllabus.pdf'
+ Git-2.39.2-64-bit.exe*                     README.md                                  'group 15 running notes'
+'Linux Commands - 26.pdf'                  'Screenshot 2023-01-14 115837.png'           testlinuxfil.txt
+
+moger@Moise MINGW64 ~/downloads/devops (master)
+$ git add testlinuxfil.txt
+warning: in the working copy of 'testlinuxfil.txt', LF will be replaced by CRLF the next time Git touches it
+
+moger@Moise MINGW64 ~/downloads/devops (master)
+$ git commit -m "This is an example of a push command, you was successful"
+[master (root-commit) e0f16ea] This is an example of a push command, you was successful
+ 1 file changed, 3 insertions(+)
+ create mode 100644 testlinuxfil.txt
+
+moger@Moise MINGW64 ~/downloads/devops (master)
+$ git branch -M main
+
+moger@Moise MINGW64 ~/downloads/devops (main)
+$ git remote add origin https://github.com/Moisegermain/MG__TERRAFORM_REP.git
+
+moger@Moise MINGW64 ~/downloads/devops (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 324 bytes | 324.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Moisegermain/MG__TERRAFORM_REP.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
